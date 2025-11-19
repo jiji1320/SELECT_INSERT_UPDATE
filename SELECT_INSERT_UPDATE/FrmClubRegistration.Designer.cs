@@ -35,23 +35,23 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.tbStudentID = new System.Windows.Forms.TextBox();
-            this.tbLastname = new System.Windows.Forms.TextBox();
-            this.tbFirstname = new System.Windows.Forms.TextBox();
-            this.tbMiddlename = new System.Windows.Forms.TextBox();
-            this.tbAge = new System.Windows.Forms.TextBox();
+            this.txtStudentId = new System.Windows.Forms.TextBox();
+            this.txtLastname = new System.Windows.Forms.TextBox();
+            this.txtFirstname = new System.Windows.Forms.TextBox();
+            this.txtMiddlename = new System.Windows.Forms.TextBox();
+            this.txtAge = new System.Windows.Forms.TextBox();
             this.cbProgram = new System.Windows.Forms.ComboBox();
             this.cbGender = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dataGridViewMembers = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMembers)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -117,40 +117,40 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Gender:";
             // 
-            // tbStudentID
+            // txtStudentId
             // 
-            this.tbStudentID.Location = new System.Drawing.Point(60, 29);
-            this.tbStudentID.Name = "tbStudentID";
-            this.tbStudentID.Size = new System.Drawing.Size(164, 20);
-            this.tbStudentID.TabIndex = 7;
+            this.txtStudentId.Location = new System.Drawing.Point(60, 29);
+            this.txtStudentId.Name = "txtStudentId";
+            this.txtStudentId.Size = new System.Drawing.Size(164, 20);
+            this.txtStudentId.TabIndex = 7;
             // 
-            // tbLastname
+            // txtLastname
             // 
-            this.tbLastname.Location = new System.Drawing.Point(60, 87);
-            this.tbLastname.Name = "tbLastname";
-            this.tbLastname.Size = new System.Drawing.Size(164, 20);
-            this.tbLastname.TabIndex = 8;
+            this.txtLastname.Location = new System.Drawing.Point(60, 87);
+            this.txtLastname.Name = "txtLastname";
+            this.txtLastname.Size = new System.Drawing.Size(164, 20);
+            this.txtLastname.TabIndex = 8;
             // 
-            // tbFirstname
+            // txtFirstname
             // 
-            this.tbFirstname.Location = new System.Drawing.Point(289, 87);
-            this.tbFirstname.Name = "tbFirstname";
-            this.tbFirstname.Size = new System.Drawing.Size(164, 20);
-            this.tbFirstname.TabIndex = 9;
+            this.txtFirstname.Location = new System.Drawing.Point(289, 87);
+            this.txtFirstname.Name = "txtFirstname";
+            this.txtFirstname.Size = new System.Drawing.Size(164, 20);
+            this.txtFirstname.TabIndex = 9;
             // 
-            // tbMiddlename
+            // txtMiddlename
             // 
-            this.tbMiddlename.Location = new System.Drawing.Point(519, 87);
-            this.tbMiddlename.Name = "tbMiddlename";
-            this.tbMiddlename.Size = new System.Drawing.Size(164, 20);
-            this.tbMiddlename.TabIndex = 10;
+            this.txtMiddlename.Location = new System.Drawing.Point(519, 87);
+            this.txtMiddlename.Name = "txtMiddlename";
+            this.txtMiddlename.Size = new System.Drawing.Size(164, 20);
+            this.txtMiddlename.TabIndex = 10;
             // 
-            // tbAge
+            // txtAge
             // 
-            this.tbAge.Location = new System.Drawing.Point(60, 151);
-            this.tbAge.Name = "tbAge";
-            this.tbAge.Size = new System.Drawing.Size(112, 20);
-            this.tbAge.TabIndex = 11;
+            this.txtAge.Location = new System.Drawing.Point(60, 151);
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(112, 20);
+            this.txtAge.TabIndex = 11;
             // 
             // cbProgram
             // 
@@ -172,11 +172,11 @@
             // 
             this.panel1.Controls.Add(this.cbGender);
             this.panel1.Controls.Add(this.cbProgram);
-            this.panel1.Controls.Add(this.tbAge);
-            this.panel1.Controls.Add(this.tbMiddlename);
-            this.panel1.Controls.Add(this.tbFirstname);
-            this.panel1.Controls.Add(this.tbLastname);
-            this.panel1.Controls.Add(this.tbStudentID);
+            this.panel1.Controls.Add(this.txtAge);
+            this.panel1.Controls.Add(this.txtMiddlename);
+            this.panel1.Controls.Add(this.txtFirstname);
+            this.panel1.Controls.Add(this.txtLastname);
+            this.panel1.Controls.Add(this.txtStudentId);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
@@ -191,7 +191,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.dataGridViewMembers);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.btnRefresh);
             this.panel2.Location = new System.Drawing.Point(11, 244);
@@ -200,32 +200,13 @@
             this.panel2.TabIndex = 15;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // btnRegister
+            // dataGridViewMembers
             // 
-            this.btnRegister.Location = new System.Drawing.Point(825, 36);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(111, 46);
-            this.btnRegister.TabIndex = 16;
-            this.btnRegister.Text = "Register";
-            this.btnRegister.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(826, 95);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(111, 46);
-            this.btnUpdate.TabIndex = 17;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Location = new System.Drawing.Point(815, 43);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(111, 38);
-            this.btnRefresh.TabIndex = 18;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.dataGridViewMembers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMembers.Location = new System.Drawing.Point(11, 16);
+            this.dataGridViewMembers.Name = "dataGridViewMembers";
+            this.dataGridViewMembers.Size = new System.Drawing.Size(797, 234);
+            this.dataGridViewMembers.TabIndex = 20;
             // 
             // label8
             // 
@@ -236,13 +217,33 @@
             this.label8.TabIndex = 19;
             this.label8.Text = "List Of Club Members";
             // 
-            // dataGridView1
+            // btnRefresh
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 16);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(797, 234);
-            this.dataGridView1.TabIndex = 20;
+            this.btnRefresh.Location = new System.Drawing.Point(815, 43);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(111, 38);
+            this.btnRefresh.TabIndex = 18;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.Location = new System.Drawing.Point(825, 36);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(111, 46);
+            this.btnRegister.TabIndex = 16;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(826, 95);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(111, 46);
+            this.btnUpdate.TabIndex = 17;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
             // FrmClubRegistration
             // 
@@ -256,11 +257,12 @@
             this.Controls.Add(this.panel1);
             this.Name = "FrmClubRegistration";
             this.Text = "FrmClubRegistration";
+            this.Load += new System.EventHandler(this.FrmClubRegistration_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMembers)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -274,11 +276,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox tbStudentID;
-        private System.Windows.Forms.TextBox tbLastname;
-        private System.Windows.Forms.TextBox tbFirstname;
-        private System.Windows.Forms.TextBox tbMiddlename;
-        private System.Windows.Forms.TextBox tbAge;
+        private System.Windows.Forms.TextBox txtStudentId;
+        private System.Windows.Forms.TextBox txtLastname;
+        private System.Windows.Forms.TextBox txtFirstname;
+        private System.Windows.Forms.TextBox txtMiddlename;
+        private System.Windows.Forms.TextBox txtAge;
         private System.Windows.Forms.ComboBox cbProgram;
         private System.Windows.Forms.ComboBox cbGender;
         private System.Windows.Forms.Panel panel1;
@@ -287,7 +289,7 @@
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewMembers;
     }
 }
 
